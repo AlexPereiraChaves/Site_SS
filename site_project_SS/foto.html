@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Sound</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fotos.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png"/>
+</head>
+<script language=javascript src="java_script/contato.js"></script>
+
+<body>
+
+    <div class=topo>
+        <header class="logo">
+            <img src="img/logo.png" />
+        </header>
+    </div>
+    <div class="interface_">
+        <nav class="menu">
+            <ul class="pai">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="foto.html">
+                    <li> Fotos</li>
+                </a>
+                <a href="contato.html">
+                    <li> Contato</li>
+                </a>
+
+            </ul>
+        </nav>
+        <section class="secao_foto">
+            <div class="em_alta">
+                <p id="tag">Produtos em alta</p>
+                <iframe src="iframe_fotos.html" name="janela" id="frame" width="950" height="400"></iframe>
+            </div>
+            <div class="novidades">
+                <p id="tag">Recentes/Novidades</p>
+                <iframe src="iframe_fotos2.html" name="janela" id="frame" width="950" height="385"></iframe>
+            </div>
+        </section>
+        <aside class="direito_orcamento">
+            <p id="orcamento">Orçamento</p>
+            <p id="n_produto"> <label for="nome_produto"> Nome do produto: </label></p>
+            <select name="opcao" id="op" onclick="calc_total()">
+                <optgroup label="Em alta">
+                    <option value="caixa_branca">caixa branca</option>
+                </optgroup>
+                <optgroup label="recentes/novidade">
+                    <option value="conj_som">Conjunto SS</option>
+                </optgroup>
+            </select>
+            <p id="quantia"><label for="quant">Quantidade: <input type="number" name="tcqtd" id="quant" min="1" max="10"
+                        value="1" onclick="calc_total()"></label></p>
+            <p id="preco"><label for="BLATH">Preço Total: R$</label>
+                <input name="to" id="total" placeholder="0" readonly>
+            </p>
+        </aside>
+        <footer class="rodape">
+            <p> &copy; copyright 2020 | Todos os direitos reservados | também nas redes sociais:
+                <a href="http://facebook.com" target="_blank"> <img src="img/ic_facebook.png" /></a>
+                <a href="http://twitter.com" target="_blank"> <img src="img/ic_facebook.png"></a>
+            </p>
+        </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>
